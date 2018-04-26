@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>S I C</title>
+    <link rel="icon" href="http://ww1.prweb.com/prfiles/2015/03/20/11915644/Design_Calculator_NEW_Icon_2015_Transparent.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</head>
+<body>
+<div class="container flow-text Absolute-Center is-Responsive">
+    <h3 class="card-panel center red lighten-2 white-text">Simple Interest Calculator</h3>
+<h3 class="">Principal :</h3>
+<input type="text" id="pr" class="s1">
+<h3>Interest :</h3>
+<input type="text" id="in" placeholder="% per year">
+<h3>No of Years :</h3>
+<input type="text" id="yr" placeholder="years">
+<br>
+<br>
+<button onclick="boy()" class="waves-effect waves-light btn center blue card-panel center">Calculate</button>
+<h3 id="re"></h3>
+    <footer class="footer-copyright blue-text">Designed by Aravindh.S</footer><footer class="footer-copyright green-text">with Material</footer>
+</div>
+<script>
+    function boy(){
+        var x = document.getElementById("pr").value;
+        var i= document.getElementById("in").value;
+        var y= document.getElementById("in").value;
+        i=i/100;
+        document.getElementById("re").innerHTML="&#8377; "+(x*i*y)+"  Rupees.";
+    }
+</script>
+<style>
+
+    ::placeholder{
+        font-size: 20px;
+        color: black;
+    }
+  h3{
+      text-align: left;
+  }
+  input{
+
+  }
+    .Absolute-Center {
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+    }
+
+    .Absolute-Center.is-Responsive {
+        min-width: 300px;
+        max-width: 400px;
+        padding: 10px;
+    }
+</style>
+</body>
+</html>
